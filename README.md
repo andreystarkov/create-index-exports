@@ -1,5 +1,14 @@
 # createIndexExports.js
 
+index.js exports routing tool.
+
+### Usage:
+
+```zsh
+$ sudo npm i -g create-index-exports
+$ create-index-exports ./src/Components
+```
+
 I use this structure for react components and other things:
 
 ```zsh
@@ -21,10 +30,10 @@ Also i use absolute paths and imports like:
 if i run:
 
 ```zsh
-  $ node ./createIndexExports.js ./Components
+  $ create-index-exports ./Components
 ```
 
-It will create index.js file with all exports:
+It will create index.js file with all imports/exports:
 
 ```jsx
   import AwesomeButton from './AwesomeButton'
@@ -59,7 +68,7 @@ mkdir ./src/Components/$1
 printf '%s\n' "$component" >> ./src/Components/$1/$1.js
 printf '%s\n' "$index" >> ./src/Components/$1/index.js
 
-node ./tools/createIndexExports.js ./src/Components
+node ./createIndexExports.js ./src/Components
 ```
 
 I run:

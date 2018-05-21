@@ -3,7 +3,8 @@ const fs = require('fs')
 
 if (process.argv.length <= 2) {
   console.log('JS auto index.js exports tool.')
-  console.log(`Usage: ${__filename} path/to/directory`)
+  console.log('https://github.com/andreystarkov/create-index-exports')
+  console.log(`Usage: create-index-exports ./path/to/directory`)
   process.exit(-1)
 } else {
   const path = process.argv[2]
