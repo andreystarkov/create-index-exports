@@ -1,5 +1,4 @@
 # createIndexExports.js
-### index.js exports generator
 
 I use this structure for react components and other things:
 
@@ -19,7 +18,6 @@ Also i use absolute paths and imports like:
   import { AwesomeButton, NicyHeader, SexyDrawer } from 'Components'
 ```
 
-Importing this way require index.js file in Components folder, that route all exports right way.
 if i run:
 
 ```zsh
@@ -40,7 +38,8 @@ It will create index.js file with all exports:
 
 ```
 
-It can be useful with other tools. For example, i have dumb script, that automaticly adds an empty component with given name. like:
+It can be useful with other tools.
+For ex., i have dumb script, that adds an empty component with given name. like:
 
 ```zsh
 # component.sh
@@ -69,4 +68,4 @@ I run:
   $ ./component.sh SomeComponent
 ```
 
-Then i have new import-ready component. Magic!
+Now i have new import-ready component. Magic!
