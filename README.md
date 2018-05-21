@@ -3,7 +3,7 @@
 
 I use this structure for react components and other things:
 
-```
+```zsh
   Components\
     AwesomeButton\
       AwesomeButton.js
@@ -16,10 +16,11 @@ I use this structure for react components and other things:
 Also i use absolute paths and imports like:
 
 ```js 
-  import { AwesomeButton, NicyHeader, SexyDrawer } from 'Components
+  import { AwesomeButton, NicyHeader, SexyDrawer } from 'Components'
 ```
 
-Importing this way require index.js file in Components folder, that route all exports right way. if i run:
+Importing this way require index.js file in Components folder, that route all exports right way.
+if i run:
 
 ```zsh
   $ node ./createIndexExports.js ./Components
