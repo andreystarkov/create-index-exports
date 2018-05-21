@@ -1,0 +1,12 @@
+{
+  "name": "create-index-exports",
+  "version": "1.0.0",
+  "description": "",
+  "main": "createIndexExports.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Andrey Starkov",
+  "license": "ISC"
+}
